@@ -3,6 +3,8 @@ FROM composer:2 AS build
 WORKDIR /app
 
 # Copiez les fichiers de l'application Laravel
+# Copiez le répertoire "livraison" de l'application Laravel
+# dans le répertoire "/app" de l'image Docker
 COPY ./livraison /app
 
 # Installez les dépendances PHP

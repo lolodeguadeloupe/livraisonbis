@@ -7,7 +7,7 @@ services:
     environment:
       - APP_ENV=local
       - APP_DEBUG=true
-      - APP_KEY=base64:YOUR_APP_KEY
+      - APP_KEY=base64:base64:wnQ9REdULHg5pZ3O2NrdtpTbVFSyqE/M/pgDdS84cig=
       - DB_HOST=db
       - DB_PORT=3306
       - DB_DATABASE=laravel
@@ -42,7 +42,7 @@ services:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: rootsecret
     ports:
-      - "8080:80"
+      - "8081:80"
     depends_on:
       - db
 
